@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #a270ff, #2e68bf, #1b2430);
+    animation: neonGlow 7s infinite alternate ease-in-out;
+}
+
+@keyframes neonGlow {
+    0% {
+        background: radial-gradient(circle, #a270ff, #2e68bf, #1b2430);
+    }
+    50% {
+        background: radial-gradient(circle, #2e68bf, #ff87ab, #ffbb33);
+    }
+    100% {
+        background: radial-gradient(circle, #ff87ab, #a270ff, #2e68bf);
+    }
+}
+
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ebf91;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #259d76;
+}
+
+
+
+.details, .match {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+#confirmBtn {
+    background-color: #d9534f;
+    transition: background-color 0.3s ease;
+}
+
+#confirmBtn:hover {
+    background-color: #c9302c;
+}
+
+
+

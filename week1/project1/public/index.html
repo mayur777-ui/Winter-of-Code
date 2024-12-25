@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worthy-match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="myForm">
+            <h2>Details</h2>
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span id="nameError" class="error"></span>
+            </div>
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+                <span id="ageError" class="error"></span>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="interest">Interest:</label>
+                <input type="text" id="interest" name="interest">
+                <span id="interestError" class="error"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
