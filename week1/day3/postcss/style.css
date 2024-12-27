@@ -1,0 +1,10 @@
+.mayur{
+    display: flex;
+}
+
+.mayur div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 187, 98);
+    margin-left: 20px;
+}
