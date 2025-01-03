@@ -17,7 +17,6 @@ body{
     background: #333;
     color:#fff;
     border: 0;
-    outline: 120px;
     width: 120px;
     height: 40px;
     margin: 5px;
@@ -67,12 +66,12 @@ body{
 }
 
 #Invalid-icon {
-    color: rgb(244, 67, 54); 
+    color: rgb(233, 214, 45); 
     margin: 0 20px;
     font-size: 35px;
 }
 
-.toast::after{
+.success::after{
     content: '';
     position: absolute;
     left: 0;
@@ -93,9 +92,23 @@ body{
     background: red;
     animation: progress 3s linear forwards;
 }
+.invalid::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: rgb(233, 214, 45); 
+    animation: progress 5s linear forwards;
+}
 
 @keyframes progress {
+    /* 0%{
+        width: 100%;
+    } */
     100%{
         width: 0;
     }
+
 }
