@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1{
+    width: 400px;
+    height: 400px;
+    background-color: rosybrown;
+    border: 1px solid black;
+}
+
+
+.box2{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.dragable{
+    cursor: pointer;
+    margin: 125px;
+    font-size: larger;
+    /* border: 1px solid black; */
+}

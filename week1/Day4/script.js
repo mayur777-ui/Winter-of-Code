@@ -57,10 +57,22 @@
 
 //   objectMethods(sampleObject);
 
-const obj = { name: "John" };
+// const obj = { name: "John" };
 
-// Destructuring with a default value for "age"
-const { name = "mayur", age = 25 } = obj;
+// // Destructuring with a default value for "age"
+// const { name = "mayur", age = 25 } = obj;
 
-console.log(name); // Output: "John"
-console.log(age);  // Output: 25 (since "age" is not defined in obj)
+// console.log(name); // Output: "John"
+// console.log(age);  // Output: 25 (since "age" is not defined in obj)
+
+// rest and spread operator
+
+let num = [1,2,3,4,5,6,7,8,9,10];
+function rest(...args){
+    console.log(args);
+}
+
+// let obj = {
+//     name: "John",
+//     age: 25,
+// }
