@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* display: flex;
+    align-items: end; */
+    /* flex-direction: column; */
+    width:  46%;
+    height: 58%;
+    background-color: rgb(183, 151, 213);
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.song-list{
+    display: flex;
+    justify-self: end;
+    align-items: flex-start;
+    display: none;
+    width: 40%;
+    height: 50%;
+    margin: 65px;
+    flex-direction: column;
+    background-color: rgba(205, 111, 111);
+    border-radius: 20px;
+    overflow: auto;
+}
+.song-list ul li{
+    list-style: none;
+    font-size: 20px;
+    margin: 16px;
+    cursor: pointer;
+}
+.play-music {
+        position: absolute;
+        bottom: 150px;
+        width: 46%;
+        height: 95px;
+        background-color: rgba(219, 14, 14, 0.295);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+}
+
+.song-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 80px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
+}
+
+.progress{
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0);
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(29, 28, 28);
+    border-radius: 50%;
+    /* left: 0; */
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+}
+
+.song-other{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.icon{
+    display: flex;
+}
+
+.icon i{
+    font-size: 30px;
+    color: rgba(0, 0, 0);
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.triple-dot{
+    position: absolute;
+    right: 438px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.song-name{
+    overflow: hidden;
+    width: 20%;
+}
+
+.song-volume{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5px;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 80px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
+}
+
+
+#volume{
+    width: 5vw;
+}
+
+/* Target the whole scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height for horizontal scrollbar */
+  }
+  
+  /* Scrollbar track (background) */
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Scrollbar thumb (draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #4caf50, #81c784); /* Gradient color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #f0f0f0; /* Add spacing effect */
+  }
+  
+  /* Scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #388e3c, #66bb6a); /* Darker gradient */
+  }
+  
