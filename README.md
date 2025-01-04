@@ -117,7 +117,7 @@ Feel free to explore the repository and provide feedback or suggestions. If you'
 
 For any queries or collaboration ideas, you can reach me at:
 
-- **Email**: [Your Email Address]
+- **Email**: [mayurlaxkar76@gmail.com]
 - **GitHub**: [https://github.com/mayur777-ui/](https://github.com/mayur777-ui/)
 
 ---
