@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen w-full bg-black bg-[url('https://static.vecteezy.com/system/resources/previews/001/401/677/non_2x/abstract-polygonal-shape-black-background-free-vector.jpg')] bg-cover">
+    <!-- Task Input -->
+    <div class="mt-4 flex gap-8 justify-center">
+        <input class="w-[70%] bg-transparent px-7 outline-none border-2 border-zinc-700 rounded-md backdrop-blur-md text-white" id="taskInput" placeholder="Enter task" type="text">
+        <button onclick="addtask()" class="bg-zinc-700 px-4 py-2 rounded-md text-white" id="addTask">Add Task</button>
+    </div>
+
+    <!-- Task List -->
+    <div class="w-full h-[80%] p-6">
+        <h1 class="w-full text-center text-3xl font-bold text-white">All Tasks</h1>
+        <div class="w-full gap-4 text-center h-full flex justify-around">
+            <!-- To-Do column -->
+            <div id="todo-column" class="column w-1/4 p-4 border border-blue-500 bg-opacity-20 shadow-md backdrop-blur-md">
+                <h2 class="font-semibold text-2xl mb-2 text-white">To-Do</h2>
+                <div id="todoTasks" class="task-list min-h-[200px] bg-opacity-20 p-2 rounded-md" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <!-- In Progress column -->
+            <div id="in-progress" class="column w-1/4 p-4 border border-yellow-500 bg-opacity-20 shadow-md backdrop-blur-md">
+                <h2 class="font-semibold text-2xl mb-2 text-white">In Progress</h2>
+                <div id="inProgressTasks" class="task-list min-h-[200px] bg-opacity-20 p-2 rounded-md" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <!-- Backlog column -->
+            <div id="backlog-column" class="column w-1/4 p-4 border border-red-500 bg-opacity-20 shadow-md backdrop-blur-md">
+                <h2 class="font-semibold text-2xl mb-2 text-white">Backlog</h2>
+                <div id="backlogTasks" class="task-list min-h-[200px] bg-opacity-20 p-2 rounded-md" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <!-- Done column -->
+            <div id="done-column" class="column w-1/4 p-4 border border-green-500 bg-opacity-20 shadow-md backdrop-blur-md">
+                <h2 class="font-semibold text-2xl mb-2 text-white">Done</h2>
+                <div id="doneTasks" class="task-list min-h-[200px] bg-opacity-20 p-2 rounded-md" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
