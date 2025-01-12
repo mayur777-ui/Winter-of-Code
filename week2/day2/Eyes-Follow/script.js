@@ -3,6 +3,7 @@ document.addEventListener('mousemove', (e) => {
     const eye2 = document.querySelector('.eye2');
 
     const eye1Rect = eye1.getBoundingClientRect();
+    // console.log(eye1Rect);
     const eye2Rect = eye2.getBoundingClientRect();
 
     const eye1CenterX = eye1Rect.left + eye1Rect.width ;
