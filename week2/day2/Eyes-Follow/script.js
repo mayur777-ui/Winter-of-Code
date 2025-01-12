@@ -12,10 +12,10 @@ document.addEventListener('mousemove', (e) => {
     const eye2CenterX = eye2Rect.left + eye2Rect.width;
     const eye2CenterY = eye2Rect.top + eye2Rect.height ;
 
-    const moveDistanceX1 = (e.clientX - eye1CenterX) / 5;
+    const moveDistanceX1 = (e.clientX - eye1CenterX) / 10;
     const moveDistanceY1 = (e.clientY - eye1CenterY) / 5;
 
-    const moveDistanceX2 = (e.clientX - eye2CenterX) / 5;
+    const moveDistanceX2 = (e.clientX - eye2CenterX) / 10;
     const moveDistanceY2 = (e.clientY - eye2CenterY) / 5;
 
     const pupil1 = document.querySelector('.pupil1');
