@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Eye-container {
+    background-color: rgb(128, 106, 106);
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eye {
+    background-color: rgb(251, 240, 240);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pupil {
+    width: 4vw;
+    height: 4vw;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    /* transform: translate(-50%, -50%); */
+    /* transition: transform 0.1s ease-in-out; */
+}
+
+/* *.eye:hover .pupil {
+    transform: scale(0.5);
+} */
+
+ .eye:hover{
+    overflow: hidden;}
+.eye:hover .eyelashes-lower {
+    width: 10vw;
+    height: 4vw;
+    background-color: grey;
+    position: absolute;
+    bottom: 0;
+}
+
+.eye:hover .eyelashes-upper {
+    width: 10vw;
+    height: 4vw;
+    background-color: grey;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+} 
