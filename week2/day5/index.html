@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangit -Web player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utitlity.css" />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left bg-black">
+        <div class="close">
+          <img class="invert" src="close.svg" alt="close" />
+        </div>
+        <div class="home bg-gray rounded m-1 p-1">
+          <div class="logo">
+            <div class="MusicLogo">
+              <img class="invert" src="music.svg" alt="music" width="40px" />
+              sangit
+            </div>
+          </div>
+          <ul>
+            <li>
+              <img class="invert" src="home.svg" alt="home" width="20px" />Home
+            </li>
+            <li>
+              <img
+                class="invert"
+                src="search.svg"
+                alt="search"
+                width="20px"
+              />search
+            </li>
+          </ul>
+        </div>
+
+        <div class="library bg-gray rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="library-big.svg" alt="library" />
+            <h2>Your library</h2>
+          </div>
+          <div class="songList">
+            <ul></ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-gray rounded m-1-right">
+        <div class="header">
+          <div class="nav">
+            <div class="hamburgerContainer">
+              <img class="invert hamburger" src="hamburger.svg" alt="menu" />
+              <img
+                class="invert"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tbGVmdCI+PHBhdGggZD0ibTE1IDE4LTYtNiA2LTYiLz48L3N2Zz4="
+                alt="left"
+              />
+              <img
+                class="invert"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tcmlnaHQiPjxwYXRoIGQ9Im05IDE4IDYtNi02LTYiLz48L3N2Zz4="
+                alt="right"
+              />
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="signup-btn">Sign up</button>
+            <button class="login-btn">log in</button>
+          </div>
+        </div>
+        <div class="spotifyplaylist">
+          <h1>spotify Playlists</h1>
+          <div class="cardContainer">
+            <div class="card">
+              <div class="play-btn">
+                <img
+                  class="play-icon"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBsYXkiPjxwb2x5Z29uIHBvaW50cz0iNSAzIDE5IDEyIDUgMjEgNSAzIi8+PC9zdmc+"
+                  alt="Playbtn"
+                />
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06"
+                alt="sleep"
+              />
+              <h2>Sleep</h2>
+              <p>Gentle Ambient piano to help you fall asleep.</p>
+            </div>
+            <div class="card">
+              <div class="play-btn">
+                <img
+                  class="play-icon"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBsYXkiPjxwb2x5Z29uIHBvaW50cz0iNSAzIDE5IDEyIDUgMjEgNSAzIi8+PC9zdmc+"
+                  alt="Playbtn"
+                />
+              </div>
+              <img
+                src="https://i.scdn.co/imag6e/ab67706f0000000281722192322800ae99c2ed06"
+                alt="sleep"
+              />
+              <h2>Sleep</h2>
+              <p>Gentle Ambient piano to help you fall asleep.</p>
+            </div>
+          </div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="abovebar">
+              <div class="songinfo"></div>
+              <div class="songbuttons">
+                <img
+                  width="30"
+                  id="previous"
+                  src="skip-back.svg"
+                  alt="previous"
+                />
+                <img width="30" id="play" src="play.svg" alt="play" />
+                <img width="30" id="next" src="skip-forward.svg" alt="next" />
+              </div>
+              <div class="volumeContainer">
+                <div class="songtime"></div>
+                <div class="volume">
+                  <img src="volume.svg" alt="volume" />
+                  <div class="range">
+                    <input type="range" name="volume" id="volume">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
